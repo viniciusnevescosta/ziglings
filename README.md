@@ -1,255 +1,201 @@
-# Ziglings
-
-Welcome to Ziglings! This project contains a series of tiny
-broken programs (and one nasty surprise). By fixing them, you'll
-learn how to read and write [Zig](https://ziglang.org/) code.
+# Ziglings — Learning Zig ⚡
 
 ![Ziglings](images/ziglings_dark.jpg "Ziglings")
 
-Those broken programs need your help! (You'll also save the
-planet from evil aliens and help some friendly elephants stick
-together, which is very sweet of you.)
+This repository is my **personal fork of [Ziglings](https://codeberg.org/ziglings/exercises)**, created as a space to **study and practice the [Zig](https://ziglang.org/) programming language**.
 
-This project was initiated by [Dave Gauer](https://ratfactor.com/) and is directly inspired
-by the brilliant and fun [rustlings](https://github.com/rust-lang/rustlings) project.
-Indirect inspiration comes from [Ruby Koans](http://rubykoans.com/) and the Little LISPer/Little
-Schemer series of books.
+The exercises, explanations, and original project structure belong to the maintainers and contributors of **Ziglings**.
 
-## Intended Audience
+This fork exists only as my personal learning space and progress tracker.
 
-This will probably be difficult if you've _never_ programmed
-before.  But no specific programming experience is required. And
-in particular, you are _not_ expected to have any prior
-experience with "systems programming" or a "systems" level
-language such as C.
+**Original project:** [Ziglings](https://codeberg.org/ziglings/exercises)
 
-Each exercise is self-contained and self-explained. However,
-you're encouraged to also check out these Zig language resources
-for more details:
+---
 
-* https://ziglang.org/learn/
-* https://ziglang.org/documentation/master/
-* [Zig in Depth! (video series)](https://www.youtube.com/watch?v=MMtvGA1YhW4&list=PLtB7CL7EG7pCw7Xy1SQC53Gl8pI7aDg9t&pp=iAQB)
+## What is Ziglings?
 
-Also, the [Zig community](https://ziglang.org/community/)
-is incredibly friendly and helpful!
+**Ziglings** is an educational project made up of a series of small Zig programs that are intentionally incomplete or broken.
 
-## Getting Started
+Each exercise introduces one or more concepts from the language. The goal is to inspect the code, compile it, understand the compiler errors or unexpected behavior, and then fix the program until it works as expected.
 
-Install a [development build](https://ziglang.org/download/) of
-the Zig compiler.  (See the "master" section of the downloads
-page.) Sometimes the latest build is not available there;
-in that case, you can download it directly from the [build directory](https://ziglang.org/download/index.json).
+Instead of focusing only on theory, Ziglings encourages learning through practice:
 
-Verify the installation and build number of `zig` like so:
+**read the code → compile → understand the error → fix it → run it again**
 
-```
-zig version
-0.17.0-dev.xxxx+xxxxxxxxx
+The compiler messages themselves are part of the learning experience, helping you become familiar with both Zig's syntax and the way the language works.
+
+---
+
+## Getting started
+
+Ziglings closely follows Zig development and may require a **development build** of the Zig compiler.
+
+This fork is currently being used and tested with:
+
+```text
+Zig 0.17.0-dev.2127+e90365cd5
 ```
 
-Clone this repository with Git:
+Clone this repository and enter the project directory:
 
-```
-git clone https://codeberg.org/ziglings/exercises.git ziglings
+```bash
+git clone https://github.com/viniciusnevescosta/ziglings ziglings
 cd ziglings
 ```
 
-Then run `zig build` and follow the instructions to begin!
+Then run:
 
-```
+```bash
 zig build
 ```
 
-Note: The output of Ziglings is the unaltered output from the Zig
-compiler. Part of the purpose of Ziglings is to acclimate you to
-reading these.
+Ziglings will guide you through the exercises and display the relevant compiler output.
 
-## A Note About Versions
+---
 
-**Hint:** To check out Ziglings for a stable release of Zig, you can use
-the appropriate tag.
+## Useful commands
 
-The Zig language is under very active development. In order to be
-current, Ziglings tracks **development** builds of the Zig
-compiler rather than versioned **release** builds. The last
-stable release was `0.16`, but Ziglings needs a dev build with
-pre-release version "0.17.0-dev" and a build number at least as high
-as that shown in the example version check above.
+| Command | Description |
+| --- | --- |
+| `zig build` | Runs the exercises starting from the next unfinished one |
+| `zig build -Dn=19` | Runs a specific exercise |
+| `zig build -Ds=27` | Starts from a specific exercise |
+| `zig build -Drandom` | Picks a random exercise |
+| `zig build -Dreset` | Runs all exercises again |
+| `zig build -h` | Shows the available build options |
+| `zig run exercises/001_hello.zig` | Runs an exercise directly with the Zig compiler |
 
-**Hint**: You can find a summary of breaking changes at the end of this README.
+---
 
-It is likely that you'll download a build which is _greater_ than
-the minimum.
+## Progress
 
-Once you have a build of the Zig compiler that works with
-Ziglings, they'll continue to work together. But keep in mind
-that if you update one, you may need to also update the other.
+| Done | # | Exercise |
+| :---: | :---: | --- |
+| [x] | 001 | [`hello`](exercises/001_hello.zig) |
+| [x] | 002 | [`std`](exercises/002_std.zig) |
+| [x] | 003 | [`assignment`](exercises/003_assignment.zig) |
+| [x] | 004 | [`arrays`](exercises/004_arrays.zig) |
+| [x] | 005 | [`arrays2`](exercises/005_arrays2.zig) |
+| [x] | 006 | [`strings`](exercises/006_strings.zig) |
+| [x] | 007 | [`strings2`](exercises/007_strings2.zig) |
+| [ ] | 008 | [`quiz`](exercises/008_quiz.zig) |
+| [ ] | 009 | [`if`](exercises/009_if.zig) |
+| [ ] | 010 | [`if2`](exercises/010_if2.zig) |
+| [ ] | 011 | [`while`](exercises/011_while.zig) |
+| [ ] | 012 | [`while2`](exercises/012_while2.zig) |
+| [ ] | 013 | [`while3`](exercises/013_while3.zig) |
+| [ ] | 014 | [`while4`](exercises/014_while4.zig) |
+| [ ] | 015 | [`for`](exercises/015_for.zig) |
+| [ ] | 016 | [`for2`](exercises/016_for2.zig) |
+| [ ] | 017 | [`quiz2`](exercises/017_quiz2.zig) |
+| [ ] | 018 | [`functions`](exercises/018_functions.zig) |
+| [ ] | 019 | [`functions2`](exercises/019_functions2.zig) |
+| [ ] | 020 | [`quiz3`](exercises/020_quiz3.zig) |
+| [ ] | 021 | [`errors`](exercises/021_errors.zig) |
+| [ ] | 022 | [`errors2`](exercises/022_errors2.zig) |
+| [ ] | 023 | [`errors3`](exercises/023_errors3.zig) |
+| [ ] | 024 | [`errors4`](exercises/024_errors4.zig) |
+| [ ] | 025 | [`errors5`](exercises/025_errors5.zig) |
+| [ ] | 026 | [`hello2`](exercises/026_hello2.zig) |
+| [ ] | 027 | [`defer`](exercises/027_defer.zig) |
+| [ ] | 028 | [`defer2`](exercises/028_defer2.zig) |
+| [ ] | 029 | [`errdefer`](exercises/029_errdefer.zig) |
+| [ ] | 030 | [`switch`](exercises/030_switch.zig) |
+| [ ] | 031 | [`switch2`](exercises/031_switch2.zig) |
+| [ ] | 032 | [`unreachable`](exercises/032_unreachable.zig) |
+| [ ] | 033 | [`iferror`](exercises/033_iferror.zig) |
+| [ ] | 034 | [`quiz4`](exercises/034_quiz4.zig) |
+| [ ] | 035 | [`enums`](exercises/035_enums.zig) |
+| [ ] | 036 | [`enums2`](exercises/036_enums2.zig) |
+| [ ] | 037 | [`structs`](exercises/037_structs.zig) |
+| [ ] | 038 | [`structs2`](exercises/038_structs2.zig) |
+| [ ] | 039 | [`pointers`](exercises/039_pointers.zig) |
+| [ ] | 040 | [`pointers2`](exercises/040_pointers2.zig) |
+| [ ] | 041 | [`pointers3`](exercises/041_pointers3.zig) |
+| [ ] | 042 | [`pointers4`](exercises/042_pointers4.zig) |
+| [ ] | 043 | [`pointers5`](exercises/043_pointers5.zig) |
+| [ ] | 044 | [`quiz5`](exercises/044_quiz5.zig) |
+| [ ] | 045 | [`optionals`](exercises/045_optionals.zig) |
+| [ ] | 046 | [`optionals2`](exercises/046_optionals2.zig) |
+| [ ] | 047 | [`methods`](exercises/047_methods.zig) |
+| [ ] | 048 | [`methods2`](exercises/048_methods2.zig) |
+| [ ] | 049 | [`quiz6`](exercises/049_quiz6.zig) |
+| [ ] | 050 | [`no_value`](exercises/050_no_value.zig) |
+| [ ] | 051 | [`values`](exercises/051_values.zig) |
+| [ ] | 052 | [`slices`](exercises/052_slices.zig) |
+| [ ] | 053 | [`slices2`](exercises/053_slices2.zig) |
+| [ ] | 054 | [`manypointers`](exercises/054_manypointers.zig) |
+| [ ] | 055 | [`unions`](exercises/055_unions.zig) |
+| [ ] | 056 | [`unions2`](exercises/056_unions2.zig) |
+| [ ] | 057 | [`unions3`](exercises/057_unions3.zig) |
+| [ ] | 058 | [`quiz7`](exercises/058_quiz7.zig) |
+| [ ] | 059 | [`integers`](exercises/059_integers.zig) |
+| [ ] | 060 | [`floats`](exercises/060_floats.zig) |
+| [ ] | 061 | [`coercions`](exercises/061_coercions.zig) |
+| [ ] | 062 | [`loop_expressions`](exercises/062_loop_expressions.zig) |
+| [ ] | 063 | [`labels`](exercises/063_labels.zig) |
+| [ ] | 064 | [`builtins`](exercises/064_builtins.zig) |
+| [ ] | 065 | [`builtins2`](exercises/065_builtins2.zig) |
+| [ ] | 066 | [`comptime`](exercises/066_comptime.zig) |
+| [ ] | 067 | [`comptime2`](exercises/067_comptime2.zig) |
+| [ ] | 068 | [`comptime3`](exercises/068_comptime3.zig) |
+| [ ] | 069 | [`comptime4`](exercises/069_comptime4.zig) |
+| [ ] | 070 | [`comptime5`](exercises/070_comptime5.zig) |
+| [ ] | 071 | [`comptime6`](exercises/071_comptime6.zig) |
+| [ ] | 072 | [`comptime7`](exercises/072_comptime7.zig) |
+| [ ] | 073 | [`comptime8`](exercises/073_comptime8.zig) |
+| [ ] | 074 | [`comptime9`](exercises/074_comptime9.zig) |
+| [ ] | 075 | [`quiz8`](exercises/075_quiz8.zig) |
+| [ ] | 076 | [`sentinels`](exercises/076_sentinels.zig) |
+| [ ] | 077 | [`sentinels2`](exercises/077_sentinels2.zig) |
+| [ ] | 078 | [`sentinels3`](exercises/078_sentinels3.zig) |
+| [ ] | 079 | [`quoted_identifiers`](exercises/079_quoted_identifiers.zig) |
+| [ ] | 080 | [`anonymous_structs`](exercises/080_anonymous_structs.zig) |
+| [ ] | 081 | [`anonymous_structs2`](exercises/081_anonymous_structs2.zig) |
+| [ ] | 082 | [`anonymous_structs3`](exercises/082_anonymous_structs3.zig) |
+| [ ] | 083 | [`anonymous_lists`](exercises/083_anonymous_lists.zig) |
+| [ ] | 084 | [`interfaces`](exercises/084_interfaces.zig) |
+| [ ] | 085 | [`async`](exercises/085_async.zig) |
+| [ ] | 086 | [`async2`](exercises/086_async2.zig) |
+| [ ] | 087 | [`async3`](exercises/087_async3.zig) |
+| [ ] | 088 | [`async4`](exercises/088_async4.zig) |
+| [ ] | 089 | [`async5`](exercises/089_async5.zig) |
+| [ ] | 090 | [`async6`](exercises/090_async6.zig) |
+| [ ] | 091 | [`async7`](exercises/091_async7.zig) |
+| [ ] | 092 | [`async8`](exercises/092_async8.zig) |
+| [ ] | 093 | [`async9`](exercises/093_async9.zig) |
+| [ ] | 094 | [`async10`](exercises/094_async10.zig) |
+| [ ] | 095 | [`quiz_async`](exercises/095_quiz_async.zig) |
+| [ ] | 096 | [`hello_c`](exercises/096_hello_c.zig) |
+| [ ] | 097 | [`c_math`](exercises/097_c_math.zig) |
+| [ ] | 098 | [`for3`](exercises/098_for3.zig) |
+| [ ] | 099 | [`memory_allocation`](exercises/099_memory_allocation.zig) |
+| [ ] | 100 | [`bit_manipulation`](exercises/100_bit_manipulation.zig) |
+| [ ] | 101 | [`bit_manipulation2`](exercises/101_bit_manipulation2.zig) |
+| [ ] | 102 | [`formatting`](exercises/102_formatting.zig) |
+| [ ] | 103 | [`for4`](exercises/103_for4.zig) |
+| [ ] | 104 | [`for5`](exercises/104_for5.zig) |
+| [ ] | 105 | [`testing`](exercises/105_testing.zig) |
+| [ ] | 106 | [`tokenization`](exercises/106_tokenization.zig) |
+| [ ] | 107 | [`threading`](exercises/107_threading.zig) |
+| [ ] | 108 | [`threading2`](exercises/108_threading2.zig) |
+| [ ] | 109 | [`files`](exercises/109_files.zig) |
+| [ ] | 110 | [`files2`](exercises/110_files2.zig) |
+| [ ] | 111 | [`labeled_switch`](exercises/111_labeled_switch.zig) |
+| [ ] | 112 | [`vectors`](exercises/112_vectors.zig) |
+| [ ] | 113 | [`quiz9`](exercises/113_quiz9.zig) |
+| [ ] | 114 | [`packed`](exercises/114_packed.zig) |
+| [ ] | 115 | [`packed2`](exercises/115_packed2.zig) |
 
-## Advanced Usage
+---
 
-It can be handy to check just a single exercise:
+## Resources
 
-```
-zig build -Dn=19
-```
-
-Or run all exercises, starting from a specific one:
-
-```
-zig build -Ds=27
-```
-
-Or let Ziglings pick an exercise for you:
-
-```
-zig build -Drandom
-```
-
-Or skip the build system entirely and interact directly with the
-compiler if you're into that sort of thing:
-
-```
-zig run exercises/001_hello.zig
-```
-
-To get a list of all possible options, run:
-
-```
-zig build -h
-```
-
-To reset the progress (have it run all the exercises that have already been completed):
-```
-zig build -Dreset
-```
-
-## What's Covered
-
-The primary goal for Ziglings is to cover the core Zig language.
-
-It would be nice to cover the Standard Library as well, but this
-is currently challenging because the stdlib is evolving even
-faster than the core language (and that's saying something!).
-Not only would stdlib coverage change very rapidly, some
-exercises might even cease to be relevant entirely.
-
-Having said that, there are some stdlib features that are
-probably here to stay or are so important to understand that they
-are worth the extra effort to keep current.
-
-Conspicuously absent from Ziglings are a lot of string
-manipulation exercises. This is because Zig itself largely avoids
-dealing with strings. Hopefully there will be an obvious way to
-address this in the future. The Ziglings crew loves strings!
-
-Zig Core Language
-
-* [x] Hello world (main needs to be public)
-* [x] Importing standard library
-* [x] Assignment
-* [x] Arrays
-* [x] Strings
-* [x] If
-* [x] While
-* [x] For
-* [x] Functions
-* [x] Errors (error/try/catch/if-else-err)
-* [x] Defer (and errdefer)
-* [x] Switch
-* [x] Unreachable
-* [x] Enums
-* [x] Structs
-* [x] Pointers
-* [x] Optionals
-* [x] Struct methods
-* [x] Slices
-* [x] Many-item pointers
-* [x] Unions
-* [x] Numeric types (integers, floats)
-* [x] Labelled blocks and loops
-* [x] Loops as expressions
-* [x] Builtins
-* [x] Inline loops
-* [x] Comptime
-* [x] Sentinel termination
-* [x] Quoted identifiers @""
-* [x] Anonymous structs/tuples/lists
-* [x] Async I/O
-* [X] Interfaces
-* [X] Bit manipulation
-* [X] Working with C
-* [ ] Opaque types (anyopaque)
-* [X] Threading
-* [x] Labeled switch
-* [x] Vector operations (SIMD)
-
-Zig Standard Library
-
-* [X] String formatting
-* [X] Testing
-* [X] Tokenization
-* [X] File handling
-
-### Version Changes
-
-* 2026-05-31 zig 0.17.0-dev.607 - zig build: separate the maker process from the configurer process, see[#35428](https://codeberg.org/ziglang/zig/pulls/35428) 
-* 2026-03-20 zig 0.16.0-dev.2915 - `GeneralPurposeAllocator` was changed to `DebugAllocator`
-* 2026-02-04 zig 0.16.0-dev.2471 - added process.Child.Cwd, see [#31090](https://codeberg.org/ziglang/zig/pulls/31090)
-* 2026-01-09 zig 0.16.0-dev.2075 - move randomness API to `std.Io`, see [#30709](https://codeberg.org/ziglang/zig/pulls/30709)
-* 2026-01-07 zig 0.16.0-dev.2040 - adjust temp files, see [#30683](https://codeberg.org/ziglang/zig/pulls/30683)
-* 2026-01-06 zig 0.16.0-dev.1976 - move process API to `std.Io` and changes to main/environ/argv, see [#30644](https://codeberg.org/ziglang/zig/pulls/30644)
-* *2025-12-28* zig 0.16.0-dev.1859 - file system I/O integrated with the std.Io interface, see [#30232](https://codeberg.org/ziglang/zig/pulls/30232)
-* *2025-11-01* zig 0.16.0-dev.1204 - more changes due to new I/O API, see [#25592](https://github.com/ziglang/zig/pull/25592)
-* *2025-09-24* zig 0.16.0-dev.377 - Enable passing file content as args, see [#25228](https://github.com/ziglang/zig/pull/25228)
-* *2025-09-03* zig 0.16.0-dev.164 - changes in reader, see [#25077](https://github.com/ziglang/zig/pull/25077)
-* *2025-08-15* zig 0.15.0-dev.1519 - changes in array list, see [#24801](https://github.com/ziglang/zig/pull/24801)
-* *2025-08-08* zig 0.15.0-dev.1380 - changes in build system, see [#24588](https://github.com/ziglang/zig/pull/24588)
-* *2025-07-22* zig 0.15.0-dev.1092 - various changes due to new I/O API, see [#24488](https://github.com/ziglang/zig/pull/24488)
-* *2024-09-16* zig 0.14.0-dev.1573 - introduction of labeled switch, see [#21257](https://github.com/ziglang/zig/pull/21257)
-* *2024-09-02* zig 0.14.0-dev.1409 - several changes in std.builtin, see [#21225](https://github.com/ziglang/zig/pull/21225)
-* *2024-08-04* zig 0.14.0-dev.1224 - several changes in build system, see [#21115](https://github.com/ziglang/zig/pull/21115)
-* *2024-08-04* zig 0.14.0-dev.839 - several changes in build system, see [#20580](https://github.com/ziglang/zig/pull/20580), [#20600](https://github.com/ziglang/zig/issues/20600)
-* *2024-06-17* zig 0.14.0-dev.42 - changes in `std.mem.split and tokenize` - see [#15579](https://github.com/ziglang/zig/pull/15579)
-* *2024-05-29* zig 0.13.0-dev.339 - rework std.Progress - see [#20059](https://github.com/ziglang/zig/pull/20059)
-* *2024-03-21* zig 0.12.0-dev.3518 - change to @fieldParentPtr - see [#19470](https://github.com/ziglang/zig/pull/19470)
-* *2024-03-21* zig 0.12.0-dev.3397 - rename std.os to std.posix - see [#5019](https://github.com/ziglang/zig/issues/5019)
-* *2024-03-14* zig 0.12.0-dev.3302 - changes in `std.fmt` - floating-point formatting implementation - see [#19229](https://github.com/ziglang/zig/pull/19229)
-* *2024-02-05* zig 0.12.0-dev.2618 - changes in `build system` - from `Step.zig_exe` to `Step.graph.zig_exe` - see [#18778](https://github.com/ziglang/zig/issues/18778)
-* *2024-01-05* zig 0.12.0-dev.2043 - rename of `std.Build.FileSource` to `std.Build.LazyPath` - see [#16353](https://github.com/ziglang/zig/issues/16353)
-* *2023-10-24* zig 0.12.0-dev.1243 - changes in `std.ChildProcess`: renamed exec to run - see [#5853](https://github.com/ziglang/zig/issues/5853)
-* *2023-06-26* zig 0.11.0-dev.4246 - changes in compile step (now it can be null)
-* *2023-06-26* zig 0.11.0-dev.3853 - removal of destination type from all cast builtins
-* *2023-06-20* zig 0.11.0-dev.3747 - `@enumToInt` is now `@intFromEnum` and `@intToFloat` is now `@floatFromInt`
-* *2023-05-25* zig 0.11.0-dev.3295 - `std.debug.TTY` is now `std.io.tty`
-* *2023-04-30* zig 0.11.0-dev.2704 - use of the new `std.Build.ExecutableOptions.link_libc` field
-* *2023-04-12* zig 0.11.0-dev.2560 - changes in `std.Build` - remove run() and install()
-* *2023-04-07* zig 0.11.0-dev.2401 - fixes of the new build system - see [#212](https://github.com/ratfactor/ziglings/pull/212)
-* *2023-02-21* zig 0.11.0-dev.2157 - changes in `build system` - new: parallel processing of the build steps
-* *2023-02-21* zig 0.11.0-dev.1711 - changes in `for loops` - new: Multi-Object For-Loops + Struct-of-Arrays
-* *2023-02-12* zig 0.11.0-dev.1638 - changes in `std.Build` cache_root now returns a directory struct
-* *2023-02-04* zig 0.11.0-dev.1568 - changes in `std.Build` (combine `std.build` and `std.build.Builder` into `std.Build`)
-* *2023-01-14* zig 0.11.0-dev.1302 - changes in `@addWithOverflow` (now returns a tuple) and `@typeInfo`; temporary disabled async functionality
-* *2022-09-09* zig 0.10.0-dev.3978 - change in `NativeTargetInfo.detect` in build
-* *2022-09-06* zig 0.10.0-dev.3880 - Ex 074 correctly fails again: comptime array len
-* *2022-08-29* zig 0.10.0-dev.3685 - `@typeName()` output change, stage1 req. for async
-* *2022-07-31* zig 0.10.0-dev.3385 - std lib string `fmt()` option changes
-* *2022-03-19* zig 0.10.0-dev.1427 - method for getting sentinel of type changed
-* *2021-12-20* zig 0.9.0-dev.2025 - `c_void` is now `anyopaque`
-* *2021-06-14* zig 0.9.0-dev.137  - std.build.Id `.Custom` is now `.custom`
-* *2021-04-21* zig 0.8.0-dev.1983 - std.fmt.format() `any` format string required
-* *2021-02-12* zig 0.8.0-dev.1065 - std.fmt.format() `s` (string) format string required
-
-## Contributing
-
-Contributions are very welcome! I'm writing this to teach myself
-and to create the learning resource I wished for. There will be
-tons of room for improvement:
-
-* Wording of explanations
-* Idiomatic usage of Zig
-* Additional exercises
-
-Please see [CONTRIBUTING](https://codeberg.org/ziglings/exercises/src/branch/main/CONTRIBUTING.md)
-in this repo for the full details.
+| Resource | Link |
+| --- | --- |
+| Ziglings | [codeberg.org/ziglings/exercises](https://codeberg.org/ziglings/exercises) |
+| Zig | [ziglang.org](https://ziglang.org/) |
+| Zig documentation | [ziglang.org/documentation/master](https://ziglang.org/documentation/master/) |
+| Learn Zig | [ziglang.org/learn](https://ziglang.org/learn/) |
+| Zig community | [ziglang.org/community](https://ziglang.org/community/) |
 
