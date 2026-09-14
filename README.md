@@ -1,4 +1,4 @@
-# Ziglings — Learning Zig ⚡
+# Ziglings
 
 ![Ziglings](images/ziglings_dark.jpg "Ziglings")
 
@@ -9,8 +9,6 @@ The exercises, explanations, and original project structure belong to the mainta
 This fork exists only as my personal learning space and progress tracker.
 
 **Original project:** [Ziglings](https://codeberg.org/ziglings/exercises)
-
----
 
 ## What is Ziglings?
 
@@ -23,8 +21,6 @@ Instead of focusing only on theory, Ziglings encourages learning through practic
 **read the code → compile → understand the error → fix it → run it again**
 
 The compiler messages themselves are part of the learning experience, helping you become familiar with both Zig's syntax and the way the language works.
-
----
 
 ## Getting started
 
@@ -51,8 +47,6 @@ zig build
 
 Ziglings will guide you through the exercises and display the relevant compiler output.
 
----
-
 ## Useful commands
 
 | Command | Description |
@@ -64,8 +58,6 @@ Ziglings will guide you through the exercises and display the relevant compiler 
 | `zig build -Dreset` | Runs all exercises again |
 | `zig build -h` | Shows the available build options |
 | `zig run exercises/001_hello.zig` | Runs an exercise directly with the Zig compiler |
-
----
 
 ## Progress
 
@@ -186,8 +178,6 @@ Ziglings will guide you through the exercises and display the relevant compiler 
 | [ ] | 113 | [`quiz9`](exercises/113_quiz9.zig) |
 | [ ] | 114 | [`packed`](exercises/114_packed.zig) |
 | [ ] | 115 | [`packed2`](exercises/115_packed2.zig) |
-
----
 
 ## Resources
 
