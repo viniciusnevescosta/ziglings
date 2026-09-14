@@ -6,8 +6,6 @@ This repository is my **personal fork of [Ziglings](https://codeberg.org/zigling
 
 The exercises, explanations, and original project structure belong to the maintainers and contributors of **Ziglings**.
 
-This fork exists only as my personal learning space and progress tracker.
-
 **Original project:** [Ziglings](https://codeberg.org/ziglings/exercises)
 
 ## What is Ziglings?
