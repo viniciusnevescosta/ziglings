@@ -68,15 +68,15 @@ Ziglings will guide you through the exercises and display the relevant compiler 
 | [x] | 005 | [`arrays2`](exercises/005_arrays2.zig) |
 | [x] | 006 | [`strings`](exercises/006_strings.zig) |
 | [x] | 007 | [`strings2`](exercises/007_strings2.zig) |
-| [ ] | 008 | [`quiz`](exercises/008_quiz.zig) |
-| [ ] | 009 | [`if`](exercises/009_if.zig) |
-| [ ] | 010 | [`if2`](exercises/010_if2.zig) |
-| [ ] | 011 | [`while`](exercises/011_while.zig) |
-| [ ] | 012 | [`while2`](exercises/012_while2.zig) |
-| [ ] | 013 | [`while3`](exercises/013_while3.zig) |
-| [ ] | 014 | [`while4`](exercises/014_while4.zig) |
-| [ ] | 015 | [`for`](exercises/015_for.zig) |
-| [ ] | 016 | [`for2`](exercises/016_for2.zig) |
+| [x] | 008 | [`quiz`](exercises/008_quiz.zig) |
+| [x] | 009 | [`if`](exercises/009_if.zig) |
+| [x] | 010 | [`if2`](exercises/010_if2.zig) |
+| [x] | 011 | [`while`](exercises/011_while.zig) |
+| [x] | 012 | [`while2`](exercises/012_while2.zig) |
+| [x] | 013 | [`while3`](exercises/013_while3.zig) |
+| [x] | 014 | [`while4`](exercises/014_while4.zig) |
+| [x] | 015 | [`for`](exercises/015_for.zig) |
+| [x] | 016 | [`for2`](exercises/016_for2.zig) |
 | [ ] | 017 | [`quiz2`](exercises/017_quiz2.zig) |
 | [ ] | 018 | [`functions`](exercises/018_functions.zig) |
 | [ ] | 019 | [`functions2`](exercises/019_functions2.zig) |
