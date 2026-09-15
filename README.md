@@ -78,13 +78,13 @@ Ziglings will guide you through the exercises and display the relevant compiler 
 | [x] | 015 | [`for`](exercises/015_for.zig) |
 | [x] | 016 | [`for2`](exercises/016_for2.zig) |
 | [x] | 017 | [`quiz2`](exercises/017_quiz2.zig) |
-| [ ] | 018 | [`functions`](exercises/018_functions.zig) |
-| [ ] | 019 | [`functions2`](exercises/019_functions2.zig) |
-| [ ] | 020 | [`quiz3`](exercises/020_quiz3.zig) |
-| [ ] | 021 | [`errors`](exercises/021_errors.zig) |
-| [ ] | 022 | [`errors2`](exercises/022_errors2.zig) |
-| [ ] | 023 | [`errors3`](exercises/023_errors3.zig) |
-| [ ] | 024 | [`errors4`](exercises/024_errors4.zig) |
+| [x] | 018 | [`functions`](exercises/018_functions.zig) |
+| [x] | 019 | [`functions2`](exercises/019_functions2.zig) |
+| [x] | 020 | [`quiz3`](exercises/020_quiz3.zig) |
+| [x] | 021 | [`errors`](exercises/021_errors.zig) |
+| [x] | 022 | [`errors2`](exercises/022_errors2.zig) |
+| [x] | 023 | [`errors3`](exercises/023_errors3.zig) |
+| [x] | 024 | [`errors4`](exercises/024_errors4.zig) |
 | [ ] | 025 | [`errors5`](exercises/025_errors5.zig) |
 | [ ] | 026 | [`hello2`](exercises/026_hello2.zig) |
 | [ ] | 027 | [`defer`](exercises/027_defer.zig) |
