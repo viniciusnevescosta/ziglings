@@ -77,7 +77,7 @@ Ziglings will guide you through the exercises and display the relevant compiler 
 | [x] | 014 | [`while4`](exercises/014_while4.zig) |
 | [x] | 015 | [`for`](exercises/015_for.zig) |
 | [x] | 016 | [`for2`](exercises/016_for2.zig) |
-| [ ] | 017 | [`quiz2`](exercises/017_quiz2.zig) |
+| [x] | 017 | [`quiz2`](exercises/017_quiz2.zig) |
 | [ ] | 018 | [`functions`](exercises/018_functions.zig) |
 | [ ] | 019 | [`functions2`](exercises/019_functions2.zig) |
 | [ ] | 020 | [`quiz3`](exercises/020_quiz3.zig) |
