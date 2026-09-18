@@ -19,7 +19,7 @@ pub fn main() void {
 
 // Please provide the return type from this function.
 // Hint: it'll be an error union.
-fn addTwenty(n: u32) MyNumberError ! u32 {
+fn addTwenty(n: u32) MyNumberError!u32 {
     if (n < 5) {
         return MyNumberError.TooSmall;
     } else {

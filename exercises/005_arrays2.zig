@@ -26,7 +26,7 @@ pub fn main() void {
     // (Problem 2)
     // Please set this array using repetition.
     // It should result in: 1 0 0 1 1 0 0 1 1 0 0 1
-    const bit_pattern_unit = [_]u8{1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1};
+    const bit_pattern_unit = [_]u8{ 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1 };
 
     // How long should the bit pattern be?
     const len = bit_pattern_unit.len;
